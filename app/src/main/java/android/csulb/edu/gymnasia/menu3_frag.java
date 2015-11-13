@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 /**
  * Created by Mayankkasturia on 11/13/2015.
  */
-public class menu3_frag extends Fragment {
+public class menu3_frag extends android.support.v4.app.Fragment {
     View rootview;
     @Nullable
     @Override

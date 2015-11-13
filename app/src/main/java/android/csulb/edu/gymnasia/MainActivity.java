@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -50,20 +51,20 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-       android.support.v4.app.Fragment objFrag =null;
-
+       Fragment objFrag = null;
+        
         switch (position){
             case 0:
-                Intent my_intent2 = new Intent(MainActivity.this, menu1_frag.class);
-                startActivity(my_intent2);
-                break;
+
+            objFrag = new menu1_frag();
+               break;
             case 1:
-                Intent my_intent3 = new Intent(MainActivity.this, menu2_frag.class);
-                startActivity(my_intent3);
+
+                objFrag =new menu2_frag();
                 break;
             case 2:
-                Intent my_intent4 = new Intent(MainActivity.this, menu3_frag.class);
-                startActivity(my_intent4);
+
+                objFrag =new menu3_frag();
                 break;
         }
 
