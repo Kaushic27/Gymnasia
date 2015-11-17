@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity
 
                 objFrag =new menu3_frag();
                 break;
+
+            case 3:
+
+                objFrag =new menu4_frag();
+                break;
         }
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -84,6 +89,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
                 break;
         }
     }
