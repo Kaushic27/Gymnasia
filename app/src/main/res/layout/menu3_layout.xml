@@ -81,7 +81,7 @@
             android:layout_height="wrap_content">
 
 
-        </RadioGroup>
+
 
         <RadioButton
             android:id="@+id/male"
@@ -102,6 +102,7 @@
             android:layout_alignBottom="@+id/calculate"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"/>
+        </RadioGroup>
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
